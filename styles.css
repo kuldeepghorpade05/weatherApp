@@ -1,0 +1,93 @@
+/* Body styling to center content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-image: url('assets/backg.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+/* Container styling to center content inside a white box */
+.container {
+    background: white; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Weather data styling */
+.weather-data h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Input styling */
+input[type="text"] {
+    width: 80%;
+    max-width: 300px; 
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button styling */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Weather image styling */
+#weather-img {
+    margin-top: 20px;
+}
+
+/* Move the input container to the top */
+#i1 {
+    position: absolute;
+    top: 160px; /* Adjust the distance from the top of the page */
+    width: 100%; /* Make sure it spans the width of the page */
+    text-align: center; /* Center the content inside */
+}
+
+/* Styling for the weather data container (#i2) */
+#i2 {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    text-align: center; /* Center align text and image */
+    width: 400px;
+    margin-top: 20px;
+}
+
+/* Weather data text styling */
+#i2 h3 {
+    font-size: 22px; /* Increase font size */
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Darker text color */
+    margin: 10px 0;
+    font-weight: bold;
+}

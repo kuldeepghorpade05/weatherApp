@@ -16,7 +16,7 @@ const weatherimg = document.getElementById('weather-img');
 
 async function getdata(cityname){
     const promise = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=8fe6dbbe334d4ebb84773811241909&q=${cityname}&aqi=yes`
+        `https://api.weatherapi.com/v1/current.json?key=8fe6dbbe334d4ebb84773811241909&q=${cityname}&aqi=yes`
     );
     return await promise.json();
 }

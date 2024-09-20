@@ -5,26 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Space between the divs */
+        }
+        .box {
+            height: 100px; /* Set height for visibility */
+            background-color: lightblue; /* Optional: background color */
+            border: 1px solid blue; /* Optional: border for visibility */
+        }
+    </style>
 </head>
 
 <body>
 
+   
 
-    <div id="i1" >
+   <!-- div1 -->
+<div id="i1" style="margin-bottom: 20px !important; clear: both;">
+    <h3 style="background-color: aliceblue;">Enter the City Name you Want to Know the Location</h3>
+    <div class="input-container">
         <input id="city-input" type="text" placeholder="ENTER CITY NAME">
         <button id="search-button">Search</button>
     </div>
+</div>
+<br>
+
+<!-- div2 -->
+<div id="i2" style="margin-top: 20px !important; clear: both;">
+    <br>
+    <h3 id="city-name">CITY NAME</h3>
+    <h3 id="city-time">LOCALTIME</h3>
+    <h3 id="city-temp">CITY-TEMP</h3>
+    <h3 id="city-humidity">CITY-HUMIDITY</h3>
     
-    <div id="i2">
-        <h3 id="city-name">cannada, ontario - toronto</h3>
-        <h3 id="city-time">localtime</h3>
-        <h3 id="city-temp">13</h3>
-        <h3 id="city-humidity">50</h3>
-        
-        <img id="weather-img" src="" alt="Weather icon" width="100" height="100">
+    <img id="weather-img" src="assets/images.png" alt="Weather icon" width="100" height="100">
 
-
+    <!-- div-->
+    <div id="current-location-button">
+        <button id="myButton">Click Here to Know Weather at your Current Location</button>
+        <br>
     </div>
+</div>
+
+    
+    
+   
 
     <script src="script.js">  </script>
 </body>
